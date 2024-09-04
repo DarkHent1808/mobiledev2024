@@ -26,12 +26,11 @@ public class ForecastFragment extends Fragment {
         layout.setOrientation(LinearLayout.VERTICAL);
         layout.setLayoutParams(new LinearLayout.LayoutParams(
                 LinearLayout.LayoutParams.MATCH_PARENT,
-                LinearLayout.LayoutParams.WRAP_CONTENT));
+                LinearLayout.LayoutParams.MATCH_PARENT));
 
         TextView tv = new TextView(getContext());
         tv.setText("Thursday");
         tv.setGravity(Gravity.CENTER);
-        tv.setTextColor(Color.BLACK);
         tv.setTextSize(34);
 
         ImageView iv = new ImageView(getContext());
