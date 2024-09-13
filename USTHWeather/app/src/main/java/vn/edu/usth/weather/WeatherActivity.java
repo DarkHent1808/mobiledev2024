@@ -5,22 +5,36 @@ import android.os.Bundle;
 import android.util.Log;
 import android.view.View;
 
-import androidx.activity.EdgeToEdge;
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.core.graphics.Insets;
 import androidx.core.view.ViewCompat;
 import androidx.core.view.WindowInsetsCompat;
 import androidx.fragment.app.FragmentManager;
 import androidx.fragment.app.FragmentTransaction;
+import androidx.viewpager2.widget.ViewPager2;
+
+import com.google.android.material.tabs.TabLayout;
+import com.google.android.material.tabs.TabLayoutMediator;
 
 public class WeatherActivity extends AppCompatActivity {
+    private TabLayout tabLayout;
+    private ViewPager2 viewPager2;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_weather);
+        tabLayout = findViewById(R.id.tabLayout);
+        viewPager2 = findViewById(R.id.viewPager2);
+        ViewPagerAdapter viewPagerAdapter = new ViewPagerAdapter(this);
+        viewPagerAdapter.addFragment(new ForecastAndWeatherFragment(),"Paris");
+        viewPagerAdapter.addFragment(new ForecastAndWeatherFragment(),"HaNoi");
+        viewPagerAdapter.addFragment(new ForecastAndWeatherFragment(),"London");
+        viewPager2.setAdapter(viewPagerAdapter);
+        new TabLayoutMediator(tabLayout, viewPager2, (tab, position) -> {
+            tab.setText(viewPagerAdapter.getTitle(position));
+        }).attach();
         Log.i("WeatherActivity", "App is created");
-        getSupportFragmentManager().beginTransaction().add(R.id.container, new ForecastFragment()).commit();
-        getSupportFragmentManager().beginTransaction().replace(R.id.fragment_weather, new WeatherFragment()).commit();
     }
 
     @Override
