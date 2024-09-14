@@ -2,10 +2,10 @@
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
-    android:layout_height="300dp"
+    android:layout_height="@dimen/forecast_height"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     tools:context=".WeatherFragment"
-    android:background="#dbfbdb">
+    android:background="@color/light_pastel_green">
 
     <TextView
         android:id="@+id/textView"
@@ -19,7 +19,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_below="@+id/textView"
-        android:text="Thunderstorm" />
+        android:text="@string/Thunderstorm" />
 
     <ImageView
         android:id="@+id/imageView"
@@ -32,7 +32,7 @@
         android:id="@+id/textView3"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Pari"
+        android:text="@string/Paris"
         android:layout_alignParentRight="true"/>
 
 

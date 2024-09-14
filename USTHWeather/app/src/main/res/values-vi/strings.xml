@@ -1,0 +1,21 @@
+<resources>
+    <string name="app_name">USTH Weather</string>
+    <string name="Hanoi">Hà Nội</string>
+    <string name="Paris">Pháp</string>
+    <string name="Thunderstorm">Bão sét</string>
+    <string name="London">Luân Đôn</string>
+    <string name="MON">Thứ 2</string>
+    <string name="TUE">Thứ 3</string>
+    <string name="WED">Thứ 4</string>
+    <string name="THU">Thứ 5</string>
+    <string name="FRI">Thứ 6</string>
+    <string name="SAT">Thứ 7</string>
+    <string name="SUN">Chủ nhật</string>
+    <string name="Cloudy">Âm u</string>
+    <string name="Unknown_weather">Không biết thời tiết thế nào</string>
+    <string name="Cyclone">BÃO LỚN!!!</string>
+    <string name="Tornado">Lốc xoáy</string>
+    <string name="Flood">Lũ lụt</string>
+    <string name="Tsunami">Sóng thần</string>
+    <string name="End_of_the_world">Bạn sẽ chết, thế giới sắp kết thúc</string>
+</resources>
