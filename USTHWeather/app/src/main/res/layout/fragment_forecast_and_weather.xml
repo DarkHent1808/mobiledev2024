@@ -8,7 +8,7 @@
     android:orientation="vertical"
     tools:context=".WeatherActivity" >
 
-    <fragment
+    <FrameLayout
         android:id="@+id/fragment_weather"
         android:name="vn.edu.usth.weather.WeatherFragment"
         android:layout_width="wrap_content"

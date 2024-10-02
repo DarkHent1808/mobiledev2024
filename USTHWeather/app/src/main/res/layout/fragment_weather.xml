@@ -5,13 +5,14 @@
     android:layout_height="@dimen/forecast_height"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     tools:context=".WeatherFragment"
-    android:background="@color/light_pastel_green">
+    android:background="@drawable/frame">
 
     <TextView
         android:id="@+id/textView"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="12C"
+        android:textSize="20dp"
         android:layout_alignParentLeft="true"/>
 
     <TextView
@@ -19,7 +20,8 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_below="@+id/textView"
-        android:text="@string/Thunderstorm" />
+        android:text="@string/Thunderstorm"
+        android:textSize="15dp"/>
 
     <ImageView
         android:id="@+id/imageView"
@@ -33,6 +35,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="@string/Paris"
+        android:textSize="20sp"
         android:layout_alignParentRight="true"/>
 
 
